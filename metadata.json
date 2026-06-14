@@ -1,0 +1,6 @@
+{
+  "name": "HostelSphere AI",
+  "description": "An AI-powered hostel management platform for colleges featuring premium student, parent, warden, security, and admin portals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Modern Heritage Palette */
+  --color-brand-bg: #FFFAF0; /* Floral White */
+  --color-brand-primary: #E03F4F; /* Crimson Rose */
+  --color-brand-success: #81912F; /* Olive Green */
+  --color-brand-accent: #F8C463; /* Golden Honey */
+  --color-brand-charcoal: #2D2D2D; /* Charcoal Gray */
+  --color-brand-slate: #6B7280; /* Slate Gray */
+}
+
+@layer base {
+  body {
+    @apply antialiased transition-colors duration-300;
+  }
+}
+
+/* Custom Utilities & Glassmorphism styles */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass-panel {
+  background: rgba(23, 23, 23, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -10px rgba(224, 63, 79, 0.15);
+}
+
+/* Scrollbar styles to match the premium Vercel/Notion theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(107, 114, 128, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(224, 63, 79, 0.5);
+}
+
+/* Custom pulsing keyframes for SOS */
+@keyframes pulse-sos {
+  0% {
+    box-shadow: 0 0 0 0 rgba(224, 63, 79, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(224, 63, 79, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(224, 63, 79, 0);
+  }
+}
+
+.sos-glow {
+  animation: pulse-sos 2s infinite;
+}
+
