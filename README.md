@@ -1,20 +1,20 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+## 🏠 HostelSphere AI
+Smart Hostel Management Powered by AI
 
-# Run and deploy your AI Studio app
+HostelSphere AI is a modern, AI-powered hostel management platform designed to digitize and streamline hostel operations for students, parents, wardens, security personnel, and administrators. It serves as a single source of truth for room allocation, fee management, complaints, visitor tracking, gate passes, mess management, and hostel analytics.
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/ddc3857c-8c0e-42a1-b45a-488998041537
-
-## Run Locally
-
-**Prerequisites:**  Node.js
+By combining automation, intelligent insights, and user-friendly dashboards, HostelSphere AI aims to create a safer, more efficient, and connected hostel ecosystem.
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🌟 Problem Statement
+
+Traditional hostel management often relies on paper registers, spreadsheets, WhatsApp groups, and manual coordination. This leads to:
+
+Inefficient room allocation
+Poor complaint tracking
+Delayed communication
+Lack of centralized records
+Security challenges in visitor management
+Limited visibility into hostel operations
+
+HostelSphere AI addresses these issues through a unified digital platform enhanced with AI-driven insights and analytics.
