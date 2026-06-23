@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   Sparkles, 
   Sun, 
-  Moon, 
+  Moon,
   Workflow, 
   TrendingUp, 
   Users, 
